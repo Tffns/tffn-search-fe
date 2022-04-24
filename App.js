@@ -5,7 +5,7 @@ import Search from './src/components/Search';
 import Catergories from './src/components/Catergories';
 
 export default function App() {
-  const [searchTerm, setSearchTerm] = useState("Burger")
+  const [searchTerm, setSearchTerm] = useState("")
 
   const commonCatorgories = [
     {
@@ -20,6 +20,9 @@ export default function App() {
     {
       name: "Mexican",
     },
+    {
+      name: "Sweets"
+    }
 ]
   console.debug("app.js term is : ", searchTerm)
   return (
