@@ -7,10 +7,13 @@ export default function CatergoriesCards({name, index, handlePress, active}) {
     <View style={[
       styles.container,
       index ===0 ? {marginLeft: 25} : {marginLeft: 15},
-      active ? {opacity: 1} : {opacity: 0.62}
+      active ? {opacity: 1} : {opacity: 0.62},
+      
      // active ? {backgroundColor: "#F8F8F8"} : {backgroundColor: "white"}
     ]}>
-      <Text style={{fontWeight: "bold"}}>{name} </Text>
+      <Text style={[
+        styles.textContainer,
+        active ? {fontWeight: "bold"} : {fontWeight: "normal"}]}>{name} </Text>
     </View>
     </TouchableOpacity>
   )
@@ -26,4 +29,7 @@ const styles = StyleSheet.create({
       backgroundColor: "whitesmoke",
       justifyContent: "center",
   },
+  textContainer:{
+    fontSize: 15,
+  }
 })
