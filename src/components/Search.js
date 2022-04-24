@@ -1,7 +1,7 @@
-import {View, TextInput, StyleSheet} from 'react-native'
+import { TextInput, StyleSheet, SafeAreaView } from 'react-native'
 import {FontAwesome} from "@expo/vector-icons"
 import { useState } from 'react';
-import { SafeAreaView } from 'react-native';
+
 export default function Search ({setSearchTerm}){
 
     const [input, setInput] = useState("");
